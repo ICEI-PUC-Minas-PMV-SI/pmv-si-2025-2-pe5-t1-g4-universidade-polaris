@@ -23,5 +23,6 @@ O objetivo é centralizar os materiais acadêmicos e técnicos que registram o p
 * Fabiana S. Soares
 * Filipe A. Costa
 * Leonardo G. G. Junior
-* Vítor C. R. Francisco
 * Lucas O. Fonseca
+* Vítor C. R. Francisco
+
