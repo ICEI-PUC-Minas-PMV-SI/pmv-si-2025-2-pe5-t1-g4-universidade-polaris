@@ -15,8 +15,9 @@
 * [Fabiana S. Soares](mailto:fabiana.soares@sga.pucminas.br)
 * [Filipe A. Costa](mailto:filipe.acacio@sga.pucminas.br)
 * [Leonardo G. G. Junior](mailto:1478100@sga.pucminas.br)
-* [Vítor C. R. Francisco](mailto:1374039@sga.pucminas.br)
 * [Lucas O. Fonseca](mailto:1374039@sga.pucminas.br)
+* [Vítor C. R. Francisco](mailto:1374039@sga.pucminas.br)
+
 
 
 ## Orientador
