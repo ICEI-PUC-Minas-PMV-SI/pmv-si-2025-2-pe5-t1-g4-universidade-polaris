@@ -8,6 +8,6 @@
 ||||
 | Leonardo G. G. Junior | * | Xh |
 ||||
-| Lucas O. Fonseca | * | Xh |
+| Lucas O. Fonseca | * Configuração do Route53, VPC e subnets na AWS<br> * Configuração do DHCP via máquina virtual Linux<br> | 20h |
 ||||
 | Vitor C. R. Francisco | * | Xh |
