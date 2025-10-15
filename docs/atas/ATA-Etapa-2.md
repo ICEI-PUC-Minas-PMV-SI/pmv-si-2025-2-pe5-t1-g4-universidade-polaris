@@ -2,7 +2,7 @@
 |-------|-------|---------------|
 | Davih G. Duque | * | Xh |
 ||||
-| Fabiana S. Soares| * | Xh |
+| Fabiana S. Soares| * Configuração do DNS (BIND9), VPC, Security Groups e subnets na AWS | 15h |
 ||||
 | Filipe A. Costa | * | Xh |
 ||||
