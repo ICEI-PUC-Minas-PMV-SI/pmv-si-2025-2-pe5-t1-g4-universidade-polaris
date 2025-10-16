@@ -1,6 +1,6 @@
 | Nome  | Atividades Feitas | Carga Horária |
 |-------|-------|---------------|
-| Davih G. Duque | * Configuração do DNS local & Configuração do Active Directory com suas respectivas politícas  | 20h |
+| Davih G. Duque | * Configuração do Active Directory com suas respectivas politícas  | 20h |
 ||||
 | Fabiana S. Soares| * Configuração do DNS (BIND9), VPC, Security Groups e subnets na AWS | 15h |
 ||||
