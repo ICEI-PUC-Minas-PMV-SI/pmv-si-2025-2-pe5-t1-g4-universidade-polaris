@@ -4,7 +4,7 @@
 ||||
 | Fabiana S. Soares| * Configuração do DNS (BIND9), VPC, Security Groups e subnets na AWS | 15h |
 ||||
-| Filipe A. Costa | * | Xh |
+| Filipe A. Costa | * Configuração do servidor FTP (EC2 + vsftpd) e integração com EFS; ajustes de segurança e conectividade | 18h |
 ||||
 | Leonardo G. G. Junior | * | Xh |
 ||||
