@@ -2,7 +2,7 @@
 |-------|-------|---------------|
 | Davih G. Duque | * Configuração do Active Directory com suas respectivas politícas  | 20h |
 ||||
-| Fabiana S. Soares| * Configuração do DNS (BIND9), VPC, Security Groups e subnets na AWS | 15h |
+| Fabiana S. Soares| * Configuração do DNS | 15h |
 ||||
 | Filipe A. Costa | * Configuração do servidor FTP (EC2 + vsftpd) e integração com EFS; ajustes de segurança e conectividade | 18h |
 ||||
