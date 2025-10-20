@@ -1,6 +1,6 @@
 | Nome  | Atividades Feitas | Carga Horária |
-|-------|-------|---------------|
-| Davih G. Duque | * Configuração do Active Directory com suas respectivas politícas  | 20h |
+|--------|-------|---------------|
+| Davih G. Duque | * Configuração do Active Directory com definição de políticas de segurança e controle de acesso  <br> * Delegação de tarefas administrativas para grupos e usuários específicos | 20h |
 ||||
 | Fabiana S. Soares| * Configuração do serviço DNS no Windows Server e definição da nomenclatura do servidor HTTP | 15h |
 ||||
