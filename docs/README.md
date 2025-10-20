@@ -1,6 +1,6 @@
 # 📄 Documentação do Projeto — Universidade Polaris
 
-## 🧩 [Documento em LaTeX] (/docs/Uni_Polaris.pdf)
+## 🧩 [Documento de Serviços](/docs/Uni_Polaris.pdf)
 
 Esta pasta reúne toda a documentação produzida ao longo do projeto de infraestrutura da **Universidade Polaris**, desenvolvido como parte das atividades da disciplina de **Sistemas de Informação** da **Pontifícia Universidade Católica de Minas Gerais (PUC Minas)**.
 
