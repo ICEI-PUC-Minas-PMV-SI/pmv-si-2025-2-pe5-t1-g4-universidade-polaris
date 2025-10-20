@@ -7,7 +7,7 @@
 
 `Eixo: 5`
 
- projeto apresenta o desenvolvimento de um plano completo de infraestrutura de rede para a Universidade Polaris, composta por quatro unidades interligadas e complementares localizadas em Belo Horizonte, Betim, Contagem e Nova Lima. A proposta busca atender à necessidade de integração entre polos com diferentes finalidades acadêmicas e tecnológicas, garantindo conectividade, segurança e desempenho nos serviços prestados. A justificativa fundamenta-se na importância de planejar e implantar uma arquitetura de rede moderna, escalável e segura, capaz de sustentar as operações educacionais e administrativas da instituição. O objetivo geral consiste em projetar e implementar uma solução de infraestrutura híbrida, combinando servidores locais e em nuvem, atendendo às demandas iniciais da Universidade Polaris.
+Projeto apresenta o desenvolvimento de um plano completo de infraestrutura de rede para a Universidade Polaris, composta por quatro unidades interligadas e complementares localizadas em Belo Horizonte, Betim, Contagem e Nova Lima. A proposta busca atender à necessidade de integração entre polos com diferentes finalidades acadêmicas e tecnológicas, garantindo conectividade, segurança e desempenho nos serviços prestados. A justificativa fundamenta-se na importância de planejar e implantar uma arquitetura de rede moderna, escalável e segura, capaz de sustentar as operações educacionais e administrativas da instituição. O objetivo geral consiste em projetar e implementar uma solução de infraestrutura híbrida, combinando servidores locais e em nuvem, atendendo às demandas iniciais da Universidade Polaris.
 
 ## Integrantes
 
