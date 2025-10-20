@@ -1,7 +1,6 @@
 # 📄 Documentação do Projeto — Universidade Polaris
 
-## 🧩 [Documento em LaTeX (Overleaf)](https://www.overleaf.com/4769597482ymjsbnxxrfkf#6a3d1d)
-> **To-do:** Exportar a versão final em PDF e adicionar nesta pasta.
+## 🧩 [Documento em LaTeX /docs/Uni_Polaris.pdf]
 
 Esta pasta reúne toda a documentação produzida ao longo do projeto de infraestrutura da **Universidade Polaris**, desenvolvido como parte das atividades da disciplina de **Sistemas de Informação** da **Pontifícia Universidade Católica de Minas Gerais (PUC Minas)**.
 
