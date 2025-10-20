@@ -8,6 +8,6 @@
 ||||
 | Leonardo G. G. Junior | * Configuração do Firewall, Windows Defender e Certificate Authority <br> * Análise de Segurança do AD e DNS | 18h |
 ||||
-| Lucas O. Fonseca | * Configuração do Route53, VPC e subnets na AWS<br> * Configuração do DHCP via máquina virtual Linux<br> | 20h |
+| Lucas O. Fonseca | * Configuração do DHCP via máquina virtual Linux<br> | 20h |
 ||||
 | Vitor C. R. Francisco | * Configuração do servidor do banco de dados (RDS) <br> * Configuração do servidor web (EC2+apache+landing-page-vite+react) | 16h |
