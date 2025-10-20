@@ -6,7 +6,7 @@
 ||||
 | Filipe A. Costa | * Configuração do servidor FTP (EC2 + vsftpd) e integração com EFS; ajustes de segurança e conectividade | 18h |
 ||||
-| Leonardo G. G. Junior | * Configuração do Firewall, Windows Defender, CA e Análise de Segurança do AD e DNS | 18h |
+| Leonardo G. G. Junior | * Configuração do Firewall, Windows Defender e Certificate Authority <br> * Análise de Segurança do AD e DNS | 18h |
 ||||
 | Lucas O. Fonseca | * Configuração do Route53, VPC e subnets na AWS<br> * Configuração do DHCP via máquina virtual Linux<br> | 20h |
 ||||
