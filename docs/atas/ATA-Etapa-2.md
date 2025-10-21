@@ -1,6 +1,6 @@
 | Nome  | Atividades Feitas | Carga Horária |
 |--------|-------|---------------|
-| Davih G. Duque | * Configuração do Active Directory com criação de OUs, usuários e políticas via GPO  <br> * Delegação de tarefas entre os membros do grupo para execução do projeto | 20h |
+| Davih G. Duque | * Durante esta etapa do projeto, minhas responsabilidades incluíram a configuração do Active Directory, abrangendo a criação de Unidades Organizacionais (OUs), usuários e a aplicação de políticas via GPO. Além disso, participei da delegação de tarefas entre os membros do grupo, garantindo que cada um pudesse executar suas funções de forma organizada. | 20h |
 ||||
 | Fabiana S. Soares| * Configuração do serviço DNS no Windows Server e definição da nomenclatura do servidor HTTP | 15h |
 ||||
