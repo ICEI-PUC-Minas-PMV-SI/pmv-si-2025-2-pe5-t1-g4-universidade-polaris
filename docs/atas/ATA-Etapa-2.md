@@ -4,7 +4,7 @@
 ||||
 | Fabiana S. Soares| * Configuração do serviço DNS no Windows Server e definição da nomenclatura do servidor HTTP | 15h |
 ||||
-| Filipe A. Costa | * Configuração do servidor FTP (EC2 + vsftpd) e integração com EFS; ajustes de segurança e conectividade | 18h |
+| Filipe A. Costa | * Durante esta etapa do projeto, minhas responsabilidades incluíram a configuração completa do servidor FTP em uma instância EC2 com sistema operacional Ubuntu, utilizando o serviço vsftpd. Realizei também a integração do servidor com o Amazon EFS, garantindo armazenamento compartilhado e persistente dos diretórios dos usuários. Configurei o ponto de montagem do EFS via protocolo NFS, com automação no arquivo /etc/fstab para montagem automática em reinicializações. Efetuei os ajustes de segurança e conectividade na VPC e nos Security Groups, permitindo o tráfego necessário para os serviços FTP, SSH e NFS, e validei o funcionamento por meio de testes de conexão no FileZilla. | 18h |
 ||||
 | Leonardo G. G. Junior | * Nesta etapa do projeto, minha responsabilidade foi realizar uma análise de segurança focada no Active Directory (AD) e no DNS. No Active Directory, conduzi uma revisão detalhada das políticas de segurança (GPOs) e das regras de senha aplicadas. Além disso, fiz uma auditoria nos grupos com privilégios administrativos (como Domain Admins e Enterprise Admins), buscando identificar e corrigir riscos que pudessem levar a um escalonamento de privilégio ou acesso indevido. Em relação ao DNS, a análise se concentrou em verificar vulnerabilidades, como a permissão de transferência de zona para servidores não autorizados, uma configuração que poderia expor a topologia interna da nossa rede. | 18h |
 ||||
