@@ -6,7 +6,7 @@
 ||||
 | Filipe A. Costa | * Configuração do servidor FTP (EC2 + vsftpd) e integração com EFS; ajustes de segurança e conectividade | 18h |
 ||||
-| Leonardo G. G. Junior | * Configuração do Firewall, Windows Defender e Certificate Authority <br> * Análise de Segurança do AD e DNS | 18h |
+| Leonardo G. G. Junior | * Nesta etapa do projeto, minha responsabilidade foi realizar uma análise de segurança focada no Active Directory (AD) e no DNS. No Active Directory, conduzi uma revisão detalhada das políticas de segurança (GPOs) e das regras de senha aplicadas. Além disso, fiz uma auditoria nos grupos com privilégios administrativos (como Domain Admins e Enterprise Admins), buscando identificar e corrigir riscos que pudessem levar a um escalonamento de privilégio ou acesso indevido. Em relação ao DNS, a análise se concentrou em verificar vulnerabilidades, como a permissão de transferência de zona para servidores não autorizados, uma configuração que poderia expor a topologia interna da nossa rede. | 18h |
 ||||
 | Lucas O. Fonseca | * Configuração e validação de um servidor DHCP em ambiente virtualizado no VirtualBox, com distribuição automática de endereços IP para clientes em rede interna, utilizando Ubuntu Server e o serviço isc-dhcp-server.<br> | 20h |
 ||||
