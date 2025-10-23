@@ -2,7 +2,7 @@
 |--------|-------|---------------|
 | Davih G. Duque | * Durante esta etapa do projeto, minhas responsabilidades incluíram a configuração do Active Directory, abrangendo a criação de Unidades Organizacionais (OUs), usuários e a aplicação de políticas via GPO. Além disso, participei da delegação de tarefas entre os membros do grupo, garantindo que cada um pudesse executar suas funções de forma organizada. | 20h |
 ||||
-| Fabiana S. Soares| * Configuração do serviço DNS no Windows Server e definição da nomenclatura do servidor HTTP | 15h |
+| Fabiana S. Soares| * Durante esta etapa do projeto, minhas responsabilidades incluíram a configuração do serviço DNS no Windows Server, definindo zonas direta e reversa, e integrando o serviço com o Active Directory para resolução de nomes interna. Também realizei a definição da nomenclatura do servidor HTTP, garantindo padronização e coerência com a estrutura de rede estabelecida pelo grupo. | 15h |
 ||||
 | Filipe A. Costa | * Durante esta etapa do projeto, minhas responsabilidades incluíram a configuração completa do servidor FTP em uma instância EC2 com sistema operacional Ubuntu, utilizando o serviço vsftpd. Realizei também a integração do servidor com o Amazon EFS, garantindo armazenamento compartilhado e persistente dos diretórios dos usuários. Configurei o ponto de montagem do EFS via protocolo NFS, com automação no arquivo /etc/fstab para montagem automática em reinicializações. Efetuei os ajustes de segurança e conectividade na VPC e nos Security Groups, permitindo o tráfego necessário para os serviços FTP, SSH e NFS, e validei o funcionamento por meio de testes de conexão no FileZilla. | 18h |
 ||||
