@@ -10,4 +10,4 @@
 ||||
 | Lucas O. Fonseca | X | Yh |
 ||||
-| Vitor C. R. Francisco | X | Yh |
+| Vitor C. R. Francisco | Nessa etapa do projeto fui responsável pela configuração do Zabbix host On-cloud. Providenciei a máquina e a configurei para o sistema de supervisão, bem como integrei-o ao nosso servidor http e ao nosso banco de dados. Também deleguei para os membros do time, instruindo-os sobre os procedimentos necessários, instalar os sistemas de supervisão on-cloud | 6h |
