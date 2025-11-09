@@ -4,7 +4,7 @@
 ||||
 | Fabiana S. Soares| Nessa fase do projeto, dei suporte à implementação e integração do monitoramento dos serviços essenciais por meio do Zabbix. Contribuí também na documentação técnica, métricas e validaçao dos processos de monitoramento. | 2h |
 ||||
-| Filipe A. Costa | X | Yh |
+| Filipe A. Costa | Nesta etapa do projeto, fui responsável pela implementação do monitoramento do servidor FTP no ambiente Zabbix em Nuvem. Realizei a configuração do host correspondente, integrando-o ao Zabbix Agent2. Além disso, produzi a documentação técnica dessa implementação em LaTeX, detalhando os gráficos, métricas coletadas, funcionamento do Zabbix e as informações operacionais do servidor FTP. | 4h |
 ||||
 | Leonardo G. G. Junior | Nesta fase do projeto, prestei assistência direta na implementação local do Zabbix, cooperando de perto na conexão e na validação do monitoramento dos hosts para os serviços essenciais (Active Directory e DNS em Windows Server, e DHCP em Ubuntu Server). Tive envolvimento direto na criação da documentação técnica, ajudando a detalhar as métricas de monitoramento e a validar os processos estabelecidos para AD e DNS. | 4h |
 ||||
