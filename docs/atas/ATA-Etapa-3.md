@@ -6,7 +6,7 @@
 ||||
 | Filipe A. Costa | X | Yh |
 ||||
-| Leonardo G. G. Junior | X | Yh |
+| Leonardo G. G. Junior | Nesta fase do projeto, prestei assistência direta na implementação local do Zabbix, cooperando de perto na conexão e na validação do monitoramento dos hosts para os serviços essenciais (Active Directory e DNS em Windows Server, e DHCP em Ubuntu Server). Tive envolvimento direto na criação da documentação técnica, ajudando a detalhar as métricas de monitoramento e a validar os processos estabelecidos para AD e DNS. | 4h |
 ||||
 | Lucas O. Fonseca | X | Yh |
 ||||
