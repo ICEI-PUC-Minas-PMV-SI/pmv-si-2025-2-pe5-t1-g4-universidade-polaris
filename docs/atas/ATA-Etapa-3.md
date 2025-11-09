@@ -2,7 +2,7 @@
 |--------|-------|---------------|
 | Davih G. Duque | Durante esta etapa do projeto, fui responsável pela configuração do Zabbix em ambiente local, incluindo a integração e monitoramento de hosts referentes aos serviços Active Directory e DNS (Windows Server) e DHCP (Ubuntu Server). Também fui responsável pela documentação do Zabbix, detalhando os parâmetros de monitoramento e os procedimentos aplicados aos serviços de AD e DNS. <br/> Além disso, participei da delegação de tarefas entre os membros do grupo, garantindo que cada um pudesse executar suas funções de forma organizada. | 6h |
 ||||
-| Fabiana S. Soares| Nessa fase do projeto, dei suporte à implementação e integração do monitoramento dos serviços essenciais por meio do Zabbix. Contribuí também na documentação técnica, métricas e validaçao dos processos de monitoramento. | 2h |
+| Fabiana S. Soares| Nessa etapa do projeto, atuei no suporte à implementação e integração do monitoramento do serviço DNS utilizando a ferramenta Zabbix. Contribuí também para a elaboração da documentação técnica, definição das métricas de desempenho e validação dos processos de monitoramento. | 2h |
 ||||
 | Filipe A. Costa | Nesta etapa do projeto, fui responsável pela implementação do monitoramento do servidor FTP no ambiente Zabbix em Nuvem. Realizei a configuração do host correspondente, integrando-o ao Zabbix Agent2. Além disso, produzi a documentação técnica dessa implementação em LaTeX, detalhando os gráficos, métricas coletadas, funcionamento do Zabbix e as informações operacionais do servidor FTP. | 4h |
 ||||
