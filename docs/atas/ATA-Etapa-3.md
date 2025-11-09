@@ -8,6 +8,6 @@
 ||||
 | Leonardo G. G. Junior | Nesta fase do projeto, prestei assistência direta na implementação local do Zabbix, cooperando de perto na conexão e na validação do monitoramento dos hosts para os serviços essenciais (Active Directory e DNS em Windows Server, e DHCP em Ubuntu Server). Tive envolvimento direto na criação da documentação técnica, ajudando a detalhar as métricas de monitoramento e a validar os processos estabelecidos para AD e DNS. | 4h |
 ||||
-| Lucas O. Fonseca | X | Yh |
+| Lucas O. Fonseca | Nesta fase, integrei o servidor DHCP ao Zabbix para monitoramento de rede, utilizando o ZeroTier como suporte para a comunicação entre os sistemas. | 2h |
 ||||
 | Vitor C. R. Francisco | Nessa etapa do projeto fui responsável pela configuração do Zabbix host On-cloud. Providenciei a máquina e a configurei para o sistema de supervisão, bem como integrei-o ao nosso servidor http e ao nosso banco de dados. Também deleguei para os membros do time, instruindo-os sobre os procedimentos necessários, instalar os sistemas de supervisão on-cloud | 6h |
