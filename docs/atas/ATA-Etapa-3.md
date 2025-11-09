@@ -6,7 +6,7 @@
 ||||
 | Filipe A. Costa | Nesta etapa do projeto, fui responsável pela implementação do monitoramento do servidor FTP no ambiente Zabbix em Nuvem. Realizei a configuração do host correspondente, integrando-o ao Zabbix Agent2. Além disso, produzi a documentação técnica dessa implementação em LaTeX, detalhando os gráficos, métricas coletadas, funcionamento do Zabbix e as informações operacionais do servidor FTP. | 4h |
 ||||
-| Leonardo G. G. Junior | Nesta fase do projeto, prestei assistência direta na implementação local do Zabbix, cooperando de perto na conexão e na validação do monitoramento dos hosts para os serviços essenciais (Active Directory e DNS em Windows Server, e DHCP em Ubuntu Server). Tive envolvimento direto na criação da documentação técnica, ajudando a detalhar as métricas de monitoramento e a validar os processos estabelecidos para AD e DNS. | 4h |
+| Leonardo G. G. Junior | Nesta etapa do projeto, ajudei a implementar e integrar o Zabbix para monitorar o Windows Server. Como já havíamos centralizado o ambiente na fase anterior, esse processo foi bem mais fácil. Isso nos permitiu aprimorar a integração e acompanhar melhor as métricas de desempenho. Também fiquei responsável por revisar e documentar o serviço, garantindo que as informações estavam corretas e que o monitoramento estava funcionando como deveria. | 4h |
 ||||
 | Lucas O. Fonseca | Durante esta etapa do projeto, atuei na implementação do Zabbix Agent, ferramenta utilizada para o monitoramento do tráfego de rede e dos recursos do servidor Linux responsável pelo serviço de DHCP. Além disso, fiquei responsável pela documentação do processo de monitoramento do DHCP, registrando as configurações realizadas e os parâmetros observados. | 2h |
 ||||
