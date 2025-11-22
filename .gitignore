@@ -1,0 +1,43 @@
+# Integration Guides (for development reference only)
+docs/integration-guides/
+
+# Dependencies
+node_modules/
+*.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+
+# Production
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temp files
+tmp/
+temp/
+*.tmp

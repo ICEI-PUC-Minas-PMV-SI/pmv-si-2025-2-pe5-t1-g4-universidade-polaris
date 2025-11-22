@@ -1,0 +1,123 @@
+.user-form-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-card {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-top: 4px solid #ffc107;
+}
+
+.form-card h1 {
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row .form-group:only-child {
+  grid-column: 1 / -1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #1a1a1a;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #ffc107;
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.1);
+}
+
+.form-group input.form-error {
+  border-color: #ff6b6b;
+  background-color: #fff5f5;
+}
+
+.form-group input.form-error:focus {
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.1);
+}
+
+.error-message {
+  font-size: 0.85rem;
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: flex-end;
+}
+
+.form-actions .button {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .user-form-container {
+    padding: 1rem;
+  }
+
+  .form-card {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .button {
+    width: 100%;
+  }
+}
+
+/* Read-Only View Styles */
+.read-only-view {
+  padding: 1rem 0;
+}
+
+.read-only-field {
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  border-radius: 0.4rem;
+  border-left: 4px solid #ffc107;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+}
