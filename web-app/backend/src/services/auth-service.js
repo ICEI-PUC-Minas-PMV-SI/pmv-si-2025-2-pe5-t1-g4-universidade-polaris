@@ -1,10 +1,12 @@
 import jwt from 'jsonwebtoken';
-import { config } from '../config/index.js';
+import { env } from '../config/index.js';
 import { UserRepository } from '../repositories/user-repository.js';
+import { SecurityLogger, ConsoleLogger } from '../lib/index.js';
 
 export class AuthService {
-  constructor() {
+  constructor(logger = null) {
     this.userRepository = new UserRepository();
+    this.securityLogger = new SecurityLogger(logger || new ConsoleLogger());
   }
 
   async createUser(user_data) {
@@ -29,38 +31,40 @@ export class AuthService {
   }
 
   async login(email, password) {
-    // Validate input
     if (!email || !password) {
+      this.securityLogger.logAuthenticationFailure(email || 'unknown', 'Missing credentials');
       throw new Error('Please provide email and password');
     }
 
-    // Find user with password field
     const user = await this.userRepository.findByEmailWithPassword(email);
     if (!user) {
+      this.securityLogger.logAuthenticationFailure(email, 'User not found');
       throw new Error('Invalid credentials');
     }
 
-    // Check password
     const is_password_valid = await user.comparePassword(password);
     if (!is_password_valid) {
+      this.securityLogger.logAuthenticationFailure(email, 'Invalid password');
       throw new Error('Invalid credentials');
     }
 
     const token = jwt.sign(
       { id: user.id, email: user.email, role: user.role },
-      config.jwt.secret,
-      { expiresIn: config.jwt.expiresIn }
+      env.jwt.secret,
+      { expiresIn: env.jwt.expiresIn }
     );
 
     const user_response = user.get({ plain: true });
     delete user_response.password;
+
+    this.securityLogger.logSuccessfulLogin(user.id, email);
 
     return { user: user_response, token };
   }
 
   async verifyToken(token) {
     try {
-      return jwt.verify(token, config.jwt.secret);
+      return jwt.verify(token, env.jwt.secret);
     } catch (error) {
       throw new Error('Invalid or expired token');
     }
@@ -99,7 +103,7 @@ export class AuthService {
     if (name) update_data.name = name;
     if (email) {
       const existing = await this.userRepository.findByEmail(email);
-      if (existing && existing.id !== parseInt(user_id)) {
+      if (existing && existing.id !== user_id) {
         throw new Error('Email already in use');
       }
       update_data.email = email;
@@ -115,6 +119,8 @@ export class AuthService {
     }
     return updated_user;
   }
+  //TODO: a validação do update poderia ser refatorada para ser mais modular e reutilizável
+
 
   async updateProfile(user_id, updates) {
     const { name, email, password } = updates;
@@ -128,7 +134,7 @@ export class AuthService {
     if (name) update_data.name = name;
     if (email) {
       const existing = await this.userRepository.findByEmail(email);
-      if (existing && existing.id !== parseInt(user_id)) {
+      if (existing && existing.id !== user_id) {
         throw new Error('Email already in use');
       }
       update_data.email = email;
@@ -146,6 +152,7 @@ export class AuthService {
     }
     return updated_user;
   }
+  //TODO: a validação do update poderia ser refatorada para ser mais modular e reutilizável
 
   async deleteUser(user_id) {
     const user = await this.userRepository.findById(user_id);

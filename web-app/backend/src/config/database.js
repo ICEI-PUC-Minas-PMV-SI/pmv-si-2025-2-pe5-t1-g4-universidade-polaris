@@ -1,15 +1,15 @@
 import { Sequelize } from 'sequelize';
-import { config } from './index.js';
+import { env } from './index.js';
 
 const sequelize = new Sequelize(
-  config.database.database,
-  config.database.username,
-  config.database.password,
+  env.database.database,
+  env.database.username,
+  env.database.password,
   {
-    host: config.database.host,
-    port: config.database.port,
-    dialect: config.database.dialect,
-    logging: config.database.logging,
+    host: env.database.host,
+    port: env.database.port,
+    dialect: env.database.dialect,
+    logging: env.database.logging,
   }
 );
 

@@ -6,7 +6,7 @@ export const handleValidationErrors = (req, res, next) => {
     return res.status(400).json({
       error: {
         status: 400,
-        message: 'Validation failed',
+        message: 'Erro de validação',
         details: errors.array().map((err) => ({
           field: err.param,
           message: err.msg,
@@ -21,44 +21,46 @@ export const validateRegister = () => [
   body('name')
     .trim()
     .notEmpty()
-    .withMessage('Name is required')
+    .withMessage('Nome é obrigatório')
     .isLength({ min: 2 })
-    .withMessage('Name must be at least 2 characters'),
+    .withMessage('Nome deve ter pelo menos 2 caracteres'),
   body('email')
     .isEmail()
-    .withMessage('Please provide a valid email')
+    .withMessage('Por favor, forneça um email válido')
     .normalizeEmail(),
+    //TODO: aqui poderíamos adicionar uma verificação para garantir que o email pertence a um domínio específico, se necessário
   body('password')
     .isLength({ min: 6 })
-    .withMessage('Password must be at least 6 characters'),
+    .withMessage('Senha deve ter pelo menos 6 caracteres'),
+    //TODO: considerar adicionar requisitos adicionais de complexidade de senha
 ];
 
 export const validateLogin = () => [
   body('email')
     .isEmail()
-    .withMessage('Please provide a valid email')
+    .withMessage('Por favor, forneça um email válido')
     .normalizeEmail(),
   body('password')
     .notEmpty()
-    .withMessage('Password is required'),
+    .withMessage('Senha é obrigatória'),
 ];
 
 export const validateCreateUser = () => [
   body('name')
     .trim()
     .notEmpty()
-    .withMessage('Name is required')
+    .withMessage('Nome é obrigatório')
     .isLength({ min: 2 })
-    .withMessage('Name must be at least 2 characters'),
+    .withMessage('Nome deve ter pelo menos 2 caracteres'),
   body('email')
     .isEmail()
-    .withMessage('Please provide a valid email')
+    .withMessage('Por favor, forneça um email válido')
     .normalizeEmail(),
   body('password')
     .isLength({ min: 6 })
-    .withMessage('Password must be at least 6 characters'),
+    .withMessage('Senha deve ter pelo menos 6 caracteres'),
   body('role')
     .optional()
     .isIn(['admin', 'moderator', 'teacher', 'student'])
-    .withMessage('Role must be one of: admin, moderator, teacher, student'),
+    .withMessage('Função deve ser uma das seguintes: admin, moderator, teacher, student'),
 ];

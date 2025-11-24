@@ -1,4 +1,5 @@
 import { AuthService } from '../services/auth-service.js';
+import { SecurityLogger, ConsoleLogger } from '../lib/index.js';
 
 const ROLE_HIERARCHY = {
   admin: 0,
@@ -10,6 +11,7 @@ const ROLE_HIERARCHY = {
 export class UserController {
   constructor() {
     this.authService = new AuthService();
+    this.securityLogger = new SecurityLogger(new ConsoleLogger());
   }
 
   canManageRole(userRole, targetRole) {
@@ -24,13 +26,26 @@ export class UserController {
       const currentUser = req.user;
 
       if (!role) {
+        this.securityLogger.logUnauthorizedAccess(
+          currentUser.id,
+          'CREATE_USER',
+          'Missing role parameter',
+          { email }
+        );
         return res.status(400).json({
           success: false,
-          error: 'Role é obrigatório',
+          error: 'Role é obrigatória',
         });
       }
 
       if (!this.canManageRole(currentUser.role, role)) {
+        this.securityLogger.logPermissionDenied(
+          currentUser.id,
+          currentUser.role,
+          'higher_role',
+          'CREATE_USER',
+          { email, targetRole: role }
+        );
         return res.status(403).json({
           success: false,
           error: 'Você não tem permissão para criar usuários com essa função',
@@ -42,6 +57,11 @@ export class UserController {
         email,
         password,
         role,
+      });
+
+      this.securityLogger.logSuccessfulAction(currentUser.id, 'CREATE_USER', {
+        newUserId: user.id,
+        newUserRole: user.role,
       });
 
       res.status(201).json({
@@ -105,6 +125,13 @@ export class UserController {
       const userLevel = ROLE_HIERARCHY[user.role];
 
       if (userLevel < currentUserLevel) {
+        this.securityLogger.logPermissionDenied(
+          currentUser.id,
+          currentUser.role,
+          'higher_role',
+          'VIEW_USER',
+          { targetUserId: id, targetUserRole: user.role }
+        );
         return res.status(403).json({
           success: false,
           error: 'Você não tem permissão para visualizar esse usuário',
@@ -134,6 +161,13 @@ export class UserController {
       const targetUserLevel = ROLE_HIERARCHY[targetUser.role];
 
       if (targetUserLevel < currentUserLevel) {
+        this.securityLogger.logPermissionDenied(
+          currentUser.id,
+          currentUser.role,
+          'higher_role',
+          'UPDATE_USER',
+          { targetUserId: id, targetUserRole: targetUser.role }
+        );
         return res.status(403).json({
           success: false,
           error: 'Você não tem permissão para editar esse usuário',
@@ -141,6 +175,13 @@ export class UserController {
       }
 
       if (updates.role && !this.canManageRole(currentUser.role, updates.role)) {
+        this.securityLogger.logPermissionDenied(
+          currentUser.id,
+          currentUser.role,
+          updates.role,
+          'UPDATE_USER_ROLE',
+          { targetUserId: id, newRole: updates.role }
+        );
         return res.status(403).json({
           success: false,
           error: 'Você não tem permissão para atribuir essa função',
@@ -148,6 +189,10 @@ export class UserController {
       }
 
       const user = await this.authService.updateUser(id, updates);
+
+      this.securityLogger.logSuccessfulAction(currentUser.id, 'UPDATE_USER', {
+        targetUserId: id,
+      });
 
       res.status(200).json({
         success: true,
@@ -168,6 +213,13 @@ export class UserController {
       const currentUser = req.user;
 
       if (currentUser.role !== 'admin') {
+        this.securityLogger.logPermissionDenied(
+          currentUser.id,
+          currentUser.role,
+          'admin',
+          'DELETE_USER',
+          { targetUserId: id }
+        );
         return res.status(403).json({
           success: false,
           error: 'Apenas administradores podem deletar usuários',
@@ -177,6 +229,12 @@ export class UserController {
       const targetUser = await this.authService.getUserById(id);
 
       if (targetUser.id === currentUser.id) {
+        this.securityLogger.logUnauthorizedAccess(
+          currentUser.id,
+          'DELETE_USER',
+          'User attempting to delete self',
+          { targetUserId: id }
+        );
         return res.status(400).json({
           success: false,
           error: 'Você não pode deletar sua própria conta',
@@ -184,6 +242,10 @@ export class UserController {
       }
 
       await this.authService.deleteUser(id);
+
+      this.securityLogger.logSuccessfulAction(currentUser.id, 'DELETE_USER', {
+        deletedUserId: id,
+      });
 
       res.status(200).json({
         success: true,

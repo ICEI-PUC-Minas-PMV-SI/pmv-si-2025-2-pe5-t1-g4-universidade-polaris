@@ -1,16 +1,16 @@
 import jwt from 'jsonwebtoken';
-import { config } from '../config/index.js';
+import { env } from '../config/index.js';
 
 export const authenticate = async (req, res, next) => {
   try {
     const auth_header = req.headers.authorization;
 
     if (!auth_header || !auth_header.startsWith('Bearer ')) {
-      return res.status(401).json({ error: 'No token provided' });
+      return res.status(401).json({ error: 'No Bearer token provided' });
     }
 
     const token = auth_header.substring(7);
-    const decoded = jwt.verify(token, config.jwt.secret);
+    const decoded = jwt.verify(token, env.jwt.secret);
 
     req.user = decoded;
     next();

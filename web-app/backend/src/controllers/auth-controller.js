@@ -1,8 +1,10 @@
 import { AuthService } from '../services/auth-service.js';
+import { SecurityLogger, ConsoleLogger } from '../lib/index.js';
 
 export class AuthController {
   constructor() {
     this.authService = new AuthService();
+    this.securityLogger = new SecurityLogger(new ConsoleLogger());
   }
 
   async login(req, res) {
