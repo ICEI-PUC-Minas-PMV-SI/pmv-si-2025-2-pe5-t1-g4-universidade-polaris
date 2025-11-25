@@ -1,5 +1,5 @@
 import { SecurityLogger } from "../lib/index.js";
-import { env } from "./env";
+import { env } from "./env.js";
 
 const allowedOrigins = [
   env.server.corsOrigin,
