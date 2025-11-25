@@ -1,8 +1,10 @@
 import { Sequelize } from 'sequelize';
 import { env } from './index.js';
 
+const cert_path = '/home/ubuntu/applications/pmv-si-2025-2-pe5-t1-g4-universidade-polaris/web-app/backend/global-bundle.pem';
+
 const sequelize = new Sequelize(
-  env.database.database,
+env.database.database,
   env.database.username,
   env.database.password,
   {
@@ -10,6 +12,13 @@ const sequelize = new Sequelize(
     port: env.database.port,
     dialect: env.database.dialect,
     logging: env.database.logging,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: true,
+        ca: fs.readFileSync(cert_path)
+      }
+    }
   }
 );
 
