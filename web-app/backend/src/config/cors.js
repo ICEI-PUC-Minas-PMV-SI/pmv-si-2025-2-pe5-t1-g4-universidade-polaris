@@ -1,4 +1,4 @@
-import { SecurityLogger } from "../lib";
+import { SecurityLogger } from "../lib/index.js";
 import { env } from "./env";
 
 const allowedOrigins = [
