@@ -1,5 +1,6 @@
 import { Sequelize } from 'sequelize';
 import { env } from './index.js';
+import fs from 'fs';
 
 const cert_path = '/home/ubuntu/applications/pmv-si-2025-2-pe5-t1-g4-universidade-polaris/web-app/backend/global-bundle.pem';
 
