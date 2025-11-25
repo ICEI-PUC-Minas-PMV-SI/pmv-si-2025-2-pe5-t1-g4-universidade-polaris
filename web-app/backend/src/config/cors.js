@@ -1,7 +1,11 @@
+import { SecurityLogger } from "../lib";
+import { env } from "./env";
+
 const allowedOrigins = [
-  'http://192.168.99.4', //TODO: transformar em variável de ambiente
+  env.server.corsOrigin,
   'http://localhost:3000',                       
-  'http://localhost:5173'                          
+  'http://localhost:5173',
+  'http://127.0.0.1:5173',                 
 ];
 
 const cors_options = {
@@ -9,6 +13,7 @@ const cors_options = {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
+      new SecurityLogger().logUnauthorizedAccess(null, 'CORS', 'Origin not allowed', { origin });
       callback(new Error('Acesso bloqueado pela política de CORS da Universidade Polaris.'));
     }
   },

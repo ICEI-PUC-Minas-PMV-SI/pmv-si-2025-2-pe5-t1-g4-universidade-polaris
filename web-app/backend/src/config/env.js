@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 
-dotenv.config(); //TODO: atualizar para usar variáveis de ambiente em prod
+dotenv.config();
 
 export const env = {
   database: {
@@ -19,5 +19,6 @@ export const env = {
   server: {
     port: process.env.PORT || 5000,
     nodeEnv: process.env.NODE_ENV || 'development',
+    corsOrigin: process.env.CORS_ORIGIN || 'http://localhost:3000',
   },
 };
