@@ -1,0 +1,64 @@
+.student-form-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-card {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-top: 4px solid #ffc107;
+}
+
+.form-card h1 {
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row .form-group:only-child {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: flex-end;
+}
+
+.form-actions .button {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .student-form-container {
+    padding: 1rem;
+  }
+
+  .form-card {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .button {
+    width: 100%;
+  }
+}
