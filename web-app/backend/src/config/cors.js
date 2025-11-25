@@ -1,5 +1,5 @@
 const allowedOrigins = [
-  //TODO: adicionar os domínios de produção
+  'http://192.168.99.4', //TODO: transformar em variável de ambiente
   'http://localhost:3000',                       
   'http://localhost:5173'                          
 ];
