@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/use-auth.js';
 import './header.css';
+import { universityLogo } from '../assets/index.js';
 
 export const Header = () => {
   const { user, logout } = useAuth();
@@ -19,6 +20,7 @@ export const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="header-brand" onClick={handleBrandClick} style={{ cursor: 'pointer' }}>
+          <img src={universityLogo} alt="Universidade Polaris" className="header-logo" />
           <h1>Universidade Polaris</h1>
         </div>
 
