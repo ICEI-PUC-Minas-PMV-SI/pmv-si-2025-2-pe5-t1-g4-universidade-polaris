@@ -9,11 +9,14 @@ import userRoutes from '../routes/user-routes.js';
 
 const app = express();
 
+if (env.server.trustProxy) {
+  app.set('trust proxy', 1);
+}
+
 app.use(cors(cors_options));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Apply general rate limiter to all routes
 app.use(rateLimiter(rate_limit_options));
 
 await connectDatabase();
