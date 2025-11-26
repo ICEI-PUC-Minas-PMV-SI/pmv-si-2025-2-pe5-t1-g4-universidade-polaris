@@ -10,4 +10,4 @@
 ||||
 | Lucas O. Fonseca | | 2h |
 ||||
-| Vitor C. R. Francisco | | 6h |
+| Vitor C. R. Francisco | Durante esta etapa do projeto, fui responsável pelo desenvolvimento da aplicação Web, especialmente do _back-end_ de cadastro de usuários da Universidade Polaris. Também fui responsável por integrá-lo ao nosso ambiente em nuvem. Todo esse processo foi documentado, refletindo como ele seguiu ou deixou dm seguir a Política de segurança, e também foi comunicado ao grupo. Os produtos finais foram discutidos e testados em conjunto. | 15h |
