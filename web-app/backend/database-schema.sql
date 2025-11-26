@@ -1,5 +1,4 @@
 -- Student Management System - MariaDB Database Schema
--- This file creates the required tables for the application
 
 -- Create users table
 CREATE TABLE IF NOT EXISTS users (
