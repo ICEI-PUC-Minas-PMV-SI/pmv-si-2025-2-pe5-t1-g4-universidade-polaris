@@ -8,6 +8,16 @@ Esta pasta reúne toda a documentação produzida ao longo do projeto de infraes
 
 O objetivo é centralizar os materiais acadêmicos e técnicos que registram o progresso e os resultados alcançados em cada etapa do trabalho.
 
+## 💾 [Acesso à aplicação web desenvolvida para a Etapa 4](http://52.200.161.207/login)
+
+Endereço: http://52.200.161.207/login
+
+Credenciais:
+- Login: polaris@edu.br
+- senha: admin1234
+
+⚠ É necessário inicializar o ambiente do AWS Learner Lab da conta 1451273@sga.pucminas.br para acessar a aplicação
+
 ### 📁 Estrutura de Pastas
 
 Os documentos estão organizados da seguinte forma:
