@@ -23,8 +23,9 @@ Credenciais:
 Os documentos estão organizados da seguinte forma:
 
 **docs/** <br/>
-**├─atas/** → Registros das etapas e tarefas realizadas por cada integrante
+**├─atas/** → Registros das etapas e tarefas realizadas por cada integrante <br/>
 **├─web-app/** → Código da aplicação da Etapa 4, tanto a app backend quanto a responsável pelo _build_ do frontend
+
 ### 👥 Equipe de Desenvolvimento
 
 * Davih G. Duque
