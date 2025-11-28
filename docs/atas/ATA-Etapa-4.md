@@ -8,6 +8,6 @@
 ||||
 | Leonardo G. G. Junior | | 4h |
 ||||
-| Lucas O. Fonseca | | 2h |
+| Lucas O. Fonseca | Durante esta etapa do projeto, fui responsável pela elaboração das seções de Segurança Física e Ambiental e Gestão de Incidentes de Segurança da Política de Segurança da Informação. Além disso, atuei de forma colaborativa nos testes da aplicação web, contribuindo para a validação das funcionalidades implementadas e para a identificação de melhorias relacionadas à segurança e ao desempenho do sistema. | 5h |
 ||||
 | Vitor C. R. Francisco | Durante esta etapa do projeto, fui responsável pelo desenvolvimento da aplicação Web, especialmente do _back-end_ de cadastro de usuários da Universidade Polaris. Também fui responsável por integrá-lo ao nosso ambiente em nuvem. Todo esse processo foi documentado, refletindo como ele seguiu ou deixou dm seguir a Política de segurança, e também foi comunicado ao grupo. Os produtos finais foram discutidos e testados em conjunto. | 15h |
