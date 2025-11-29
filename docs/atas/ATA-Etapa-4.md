@@ -6,7 +6,7 @@
 ||||
 | Filipe A. Costa | | 4h |
 ||||
-| Leonardo G. G. Junior | | 4h |
+| Leonardo G. G. Junior | Durante esta etapa do projeto, fui responsável pela elaboração e documentação das seções de Gestão de Incidentes, Conscientização e Treinamento e Avaliação e Melhoria Contínua da Política de Segurança da Informação. O trabalho envolveu a definição de protocolos para resposta e relatórios de incidentes, o estabelecimento de programas de capacitação, bem como a estruturação de processos de auditoria, revisão de políticas, análise de riscos e medição de desempenho. Além disso, atuei de forma colaborativa nos testes da aplicação web, contribuindo para a validação das funcionalidades implementadas e para a identificação de melhorias relacionadas à segurança e ao desempenho do sistema. | 15h |
 ||||
 | Lucas O. Fonseca | Durante esta etapa do projeto, fui responsável pela elaboração das seções de Segurança Física e Ambiental e Gestão de Incidentes de Segurança da Política de Segurança da Informação. Além disso, atuei de forma colaborativa nos testes da aplicação web, contribuindo para a validação das funcionalidades implementadas e para a identificação de melhorias relacionadas à segurança e ao desempenho do sistema. | 5h |
 ||||
