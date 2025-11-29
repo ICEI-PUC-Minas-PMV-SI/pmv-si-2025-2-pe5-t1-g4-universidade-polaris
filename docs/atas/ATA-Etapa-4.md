@@ -2,7 +2,7 @@
 |--------|-------|---------------|
 | Davih G. Duque | Durante esta etapa do projeto, fui responsável pela criação da Cartilha de Segurança, desenvolvendo sua identidade visual e garantindo que o material apresentasse clareza, padronização e coerência com a proposta da equipe.<br/> Também fui responsável pela elaboração das seções de Introdução, Gerenciamento de Acesso e Classificação da Informação na documentação da Política de Segurança.<br/> Além disso, participei da delegação de tarefas entre os membros do grupo, assegurando que cada integrante pudesse desempenhar suas funções de forma organizada e alinhada aos objetivos do projeto. | 20h |
 ||||
-| Fabiana S. Soares| | 2h | 
+| Fabiana S. Soares| Durante esta etapa, fui responsável pela elaboração das seções Princípios de Segurança e Segurança de Redes e Comunicações, estruturando os conteúdos sobre confidencialidade, integridade e disponibilidade, além das diretrizes de proteção de dados, monitoramento e detecção de intrusões. Além disso, atuei de forma colaborativa validando os testes realizados em conjunto com o grupo.| 4h | 
 ||||
 | Filipe A. Costa | | 4h |
 ||||
