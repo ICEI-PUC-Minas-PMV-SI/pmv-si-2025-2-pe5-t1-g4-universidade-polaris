@@ -24,6 +24,7 @@ Os documentos estão organizados da seguinte forma:
 
 **docs/** <br/>
 **├─atas/** → Registros das etapas e tarefas realizadas por cada integrante <br/>
+**├─entregaveis/** → Documentos desenvolvidos pelo time e entregues em suas respectivas etapas <br/>
 **├─web-app/** → Código da aplicação da Etapa 4, tanto a app backend quanto a responsável pelo _build_ do frontend
 
 ### 👥 Equipe de Desenvolvimento
