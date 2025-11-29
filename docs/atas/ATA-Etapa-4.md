@@ -4,7 +4,8 @@
 ||||
 | Fabiana S. Soares| Durante esta etapa, fui responsável pela elaboração das seções Princípios de Segurança e Segurança de Redes e Comunicações, estruturando os conteúdos sobre confidencialidade, integridade e disponibilidade, além das diretrizes de proteção de dados, monitoramento e detecção de intrusões. Além disso, atuei de forma colaborativa validando os testes realizados em conjunto com o grupo.| 4h | 
 ||||
-| Filipe A. Costa | | 4h |
+| Filipe A. Costa | Durante esta etapa do projeto, fui responsável pela elaboração das seções Conformidade Legal e Regulamentar e Responsabilidades da Política de Segurança da Informação da Universidade Polaris. Esse trabalho envolveu a análise das obrigações previstas na LGPD, direitos autorais, normas aplicáveis ao setor educacional e boas práticas internacionais, bem como a estruturação das diretrizes que definem papéis e deveres da Direção, da Equipe de Segurança da Informação e dos demais colaboradores da Instituição.
+Garanti padronização conceitual e alinhamento entre as diferentes áreas da PSI. Também participei das revisões gerais do documento, verificando coerência temática, consistência normativa e clareza descritiva.| 5h |
 ||||
 | Leonardo G. G. Junior | Durante esta etapa do projeto, fui responsável pela elaboração das seções da Política de Segurança da Informação referentes a Conscientização e Treinamento e Avaliação e Melhoria Contínua. Este trabalho abrangeu a documentação de programas de capacitação, bem como a definição de processos de auditoria, revisão de políticas, análise de riscos e medição de desempenho. Além disso, atuei de forma colaborativa nos testes da aplicação web, contribuindo para a validação das funcionalidades implementadas e para a identificação de melhorias relacionadas à segurança e ao desempenho do sistema. | 15h |
 ||||
